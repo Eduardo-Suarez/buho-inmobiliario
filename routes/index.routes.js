@@ -7,12 +7,16 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
-router.get("/crear-reseña", (req, res, next) => {
-  res.render("creacionReseña");
+router.get("/crear-resena", (req, res, next) => {
+  res.render("creacionResena");
 });
 // Get quien somos
 router.get("/quienSomos", (req,res,next) => {
   res.render("quienSomos")
+})
+
+router.get("/vista-resenas", (req,res,next) => {
+  res.render("vistaResenas");
 })
 
 module.exports = router;
