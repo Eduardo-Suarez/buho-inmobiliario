@@ -53,13 +53,22 @@
 <div class="wrapper">
   <h2>Crear Cuenta</h2>
   <form action="/auth/signup" method="POST">
+    <input type="text" name="name" placeholder="Nombre" />
+    <input type="text" name="lastName" placeholder="Apellido" />
     <input type="text" name="username" placeholder="Nombre de usuario" />
     <input type="email" name="email" placeholder="Correo" />
     <input type="password" name="password" placeholder="Contraseña" />
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero">
+      <option value="hombre">Hombre</option>
+      <option value="mujer">Mujer</option>
+      <option value="otro">Otro</option>
+    </select>
+
 
     <div class="terms">
-      <input type="checkbox" id="checkbox">
       <label for="checkbox">Estoy de acuerdo con los <a href="#"> Terminos y Condiciones</a></label>
+      <input type="checkbox" id="checkbox">
     </div>
     <button type="submit"> Registrarse</button>
     <div class="member">

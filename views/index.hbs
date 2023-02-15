@@ -1,5 +1,5 @@
-
-<div class="parte1">
+<div class="cuerpo">
+    <div class="parte1">
     <h1>¿Qué es el Gran Buro Inmobiliario?</h1>
     <p>Una herramienta creada y diseñada para registrar el comportamiento y el mal actuar
         de arrendatarios, profesionales inmobiliarios, notarías y constructores.
@@ -16,37 +16,50 @@
     <p>Conuslta el <span>Gran Buro Inmobiliario</span> revisa sus referencias y evitate problemas</p>
     <button class="botonConsultarBuro">Hacer una Conuslta</button>
 </div>
+</div>
+
 
 <style>
- 
-body{
-    
-}
+    .cuerpo {
+        max-width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+    }
 
-.parte1{
-    background-color: beige;
-    border: 5px  solid #1a659e;
-    height: 200px;
-    width: 1000px;
-    margin: 10px;
-}
+    .parte1, .parte2, .parte3 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-.parte2{
-    background-color: beige;
-    border: 5px  solid #1a659e;
-    height: 200px;
-    width: 1000px;
-    margin: 10px;
-}
+    .parte2 h2 {
+        font-size: 1.5rem;
+    }
 
-.parte3{
-    background-color: beige;
-    border: 5px  solid #1a659e;
-    height: 200px;
-    width: 1000px;
-    margin: 10px;
-}
+    .botonCrearReseña, .botonConsultarBuro {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 4px;
+        cursor: pointer;
+    }
 
+    .botonCrearReseña:hover, .botonConsultarBuro:hover {
+        background-color: #3e8e41;
+    }
 
-
+    @media only screen and (min-width: 768px) {
+        .parte1, .parte2, .parte3 {
+            width: 30%;
+            margin-bottom: 0;
+        }
+        .parte2 h2 {
+            font-size: 2rem;
+        }
+    }
 </style>
