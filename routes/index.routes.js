@@ -7,7 +7,8 @@ router.get("/", (req, res, next) => {
   res.render("index");
 });
 
-router.get("/contacto", (req,res,next) => {
+// Get quien somos
+router.get("/quienSomos", (req,res,next) => {
   res.render("quienSomos")
 })
 
