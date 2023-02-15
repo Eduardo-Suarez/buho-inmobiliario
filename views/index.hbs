@@ -1,128 +1,52 @@
 
-<header class="header">
-    <nav class="nav">
-        <a href="#" class="logo nav-link">GBI</a>
-        <button class="nav-toggle"> <img src="/public/images/menu.png" alt=""></button>
-        <ul class="nav-menu">
-             <li class="nav-menu-item"><a href="#" class="nav-link nav-link">Inicio</a></li>
-             <li class="nav-menu-item"><a href="#" class="nav-link nav-link">¿Quienes Somos?</a></li>
-             <li class="nav-menu-item"><a href="#" class="nav-link nav-link">Servicios</a></li>
-             <li class="nav-menu-item"><a href="#" class="nav-link nav-link">Registrate</a></li>
-             <li class="nav-menu-item"><a href="#" class="nav-link nav-link">Iniciar Sesión</a></li>
-        </ul>
-    </nav>
-</header>
+<div class="parte1">
+    <h1>¿Qué es el Gran Buro Inmobiliario?</h1>
+    <p>Una herramienta creada y diseñada para registrar el comportamiento y el mal actuar
+        de arrendatarios, profesionales inmobiliarios, notarías y constructores.
+    </p>
+</div>
 
+<div class="parte2">
+    <h2>No permitas que continuen estafando a otras personas <span>¡No estás solo!</span></h2>
+    <button class="botonCrearReseña"> Crear Reseña</button>
+</div>
 
+<div class="parte3">
+    <h3>¿Piensas rentar cualquier inmueble, comprar una propiedad o hacer tus tramites en alguna notaría?</h3>
+    <p>Conuslta el <span>Gran Buro Inmobiliario</span> revisa sus referencias y evitate problemas</p>
+    <button class="botonConsultarBuro">Hacer una Conuslta</button>
+</div>
 
 <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+ 
+body{
+    
+}
 
-    body{
-        font-family: sans-serif;
-        padding: 90px 20px 0;
-    }
+.parte1{
+    background-color: beige;
+    border: 5px  solid #1a659e;
+    height: 200px;
+    width: 1000px;
+    margin: 10px;
+}
 
-    .header{
-        background-color: #ff6b35;
-        height: 80px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-    }
+.parte2{
+    background-color: beige;
+    border: 5px  solid #1a659e;
+    height: 200px;
+    width: 1000px;
+    margin: 10px;
+}
 
-    .nav{
-        display: flex;
-        justify-content: space-between;
-        max-width: 992px;
-        margin: 0 auto;
-    }
-
-    .nav-link{
-        color: white;
-        text-decoration: none;
-    }
-
-    .logo{
-        font-size: 30px;
-        font-weight: bold;
-        padding: 0 40px;
-        line-height: 80px;
-    }
-
-    .nav-menu{
-        display: flex;
-        margin-right: 40px;
-        list-style: none;
-    }
-
-    .nav-menu-item{
-        font-size: 18px;
-        margin: 0 10px;
-        line-height: 80px;
-        text-transform: uppercase;
-        width: max-content;
-    }
-    .nav-toggle{
-        color: white;
-        background: none;
-        border: none;
-        font-size: 30px;
-        padding: 0 20px;
-        line-height: 60px;
-        display: none;
-    }
-
-    /* Código para volverlo Responsive*/
-    @media (max-width: 768px){
-        body{
-            padding-top: 70px;
-        }
-
-        .header{
-            height: 60px;
-        }
-
-
-        .logo{
-            font-size: 25px;
-            padding: 0 20px;
-            line-height: 60px;
-        }
-
-        .nav-menu{
-            flex-direction: column;
-            align-items: center;
-            margin-right: 20px;
-            background-color: #2c3e50;
-            position: fixed;
-            left: 0;
-            top: 60px;
-            width: 100%;
-            padding: 20px 0;
-            
-            height: calc(100% - 60px);
-            overflow-y: auto;
-        }
-
-        .nav-menu-item{
-            line-height: 70px;
-        }
-
-        .nav-toggle{
-            display: block;
-        }
-
-
-
-
+.parte3{
+    background-color: beige;
+    border: 5px  solid #1a659e;
+    height: 200px;
+    width: 1000px;
+    margin: 10px;
+}
 
 
 
 </style>
-
