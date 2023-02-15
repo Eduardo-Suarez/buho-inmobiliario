@@ -11,14 +11,26 @@
   <body>
     <header class="header">
     <nav class="nav">
-        <a href="#" class="logo nav-link">GBI</a>
+        <a href="/" class="logo nav-link">GBI</a>
         <button class="nav-toggle"> <img src="/public/images/menu.png" alt=""></button>
         <ul class="nav-menu">
-             <li class="nav-menu-item"><a href="#" class="nav-link nav-link">Inicio</a></li>
-             <li class="nav-menu-item"><a href="#" class="nav-link nav-link">¿Quienes Somos?</a></li>
+             <li class="nav-menu-item"><a href="/" class="nav-link nav-link">Inicio</a></li>
+
+             <li class="nav-menu-item"><a href="/quienSomos" class="nav-link nav-link">¿Quienes Somos?</a></li>
+
              <li class="nav-menu-item"><a href="#" class="nav-link nav-link">Servicios</a></li>
-             <li class="nav-menu-item"><button class="nav-link nav-link botonNav">Registrate</button></li>
-             <li class="nav-menu-item"><button class="nav-link nav-link botonNav">Iniciar Sesión</button></li>
+
+             <li class="nav-menu-item"> <a href="/auth/signup">
+                <button class="nav-link nav-link botonNav">Registrate</button>
+             </a>
+             </li>
+
+             <li class="nav-menu-item"><a href="/auth/login">
+                <button class="nav-link nav-link botonNav">Iniciar Sesión</button>
+             </a>
+              
+             
+             </li>
         </ul>
     </nav>
 </header>

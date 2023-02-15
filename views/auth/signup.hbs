@@ -52,27 +52,24 @@
 
 <div class="wrapper">
   <h2>Crear Cuenta</h2>
-  <form action="#">
-    <input type="text" name="name" placeholder="Nombre"/>
-    <input type="text" name="lastName" placeholder="Apellido"/>
-    <input type="text" name="username" placeholder="Nombre de usuario"/>
-    <input type="email" name="email" placeholder="Correo"/>
-    <input type="password" name="password" placeholder="Contraseña"/>
-    <label for="gender">Género:</label>
-      <select id="gender" name="gender">
-        <option value="masculino">Masculino</option>
-        <option value="femenino">Femenino</option>
-        <option value="otro">Otro</option>
-      </select>
+  <form action="/auth/signup" method="POST">
+    <input type="text" name="username" placeholder="Nombre de usuario" />
+    <input type="email" name="email" placeholder="Correo" />
+    <input type="password" name="password" placeholder="Contraseña" />
+
+    <div class="terms">
+      <input type="checkbox" id="checkbox">
+      <label for="checkbox">Estoy de acuerdo con los <a href="#"> Terminos y Condiciones</a></label>
+    </div>
+    <button type="submit"> Registrarse</button>
+    <div class="member">
+      ¿Ya eres un usuario? <a href="/auth/login"> Inicia sesión aquí</a>
+    </div>
+
+    {{#if errorMessage}}
+        <p class="error">{{errorMessage}}</p>
+    {{/if}}
   </form>
-  <div class="terms">
-    <input type="checkbox" id="checkbox">
-    <label for="checkbox">Estoy de acuerdo con los <a href="#"> Terminos y Condiciones</a></label>
-  </div>
-  <button> Iniciar Sesión</button>
-  <div class="member">
-    ¿Ya eres un usuario? <a href="#"> Inicia sesión aquí</a>
-  </div>  
 </div>
 
 
