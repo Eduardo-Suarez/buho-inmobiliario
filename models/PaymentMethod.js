@@ -24,6 +24,10 @@ const paymentMethodSchema = new Schema({
         minLength: 3,
         maxLenght: 3,
         required: true
+    },
+    emisor:{
+        type: String,
+        enum: ["visa", "mastercard", "amex"]
     }
 }, {
     timestamps: true

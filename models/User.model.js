@@ -37,10 +37,10 @@ const userSchema = new Schema(
     birthday:{
       type: Date,
     },
-    foto:{
+    picture:{
       type: String,
     },
-    genero:{
+    gender:{
       type: String,
       enum:["Men", "Women", "Other"]
     },
