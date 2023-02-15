@@ -53,9 +53,17 @@
 <div class="wrapper">
   <h2>Crear Cuenta</h2>
   <form action="#">
+    <input type="text" name="name" placeholder="Nombre"/>
+    <input type="text" name="lastName" placeholder="Apellido"/>
     <input type="text" name="username" placeholder="Nombre de usuario"/>
     <input type="email" name="email" placeholder="Correo"/>
     <input type="password" name="password" placeholder="Contraseña"/>
+    <label for="gender">Género:</label>
+      <select id="gender" name="gender">
+        <option value="masculino">Masculino</option>
+        <option value="femenino">Femenino</option>
+        <option value="otro">Otro</option>
+      </select>
   </form>
   <div class="terms">
     <input type="checkbox" id="checkbox">
@@ -146,5 +154,6 @@ input:focus{
   color: rgb(17, 107, 143);
   text-decoration: none;
 }
+
 
 </style>

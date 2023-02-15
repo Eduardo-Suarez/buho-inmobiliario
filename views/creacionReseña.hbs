@@ -1,0 +1,77 @@
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <h1>Reportar</h1>
+        
+        <label for="category">Categoría:</label>
+            <select id="category" name="category" required>
+                <option value="">Seleccione una categoría</option>
+                <option value="Inquilino">Inquilino</option>
+                <option value="Profesional Inmobiliario">Profesional Inmobiliario</option>
+                <option value="Notaría">Notaría</option>
+                <option value="Constructora">Constructora</option>
+            </select>
+        <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+      
+        <label for="review">Reporte:</label>
+            <textarea id="review" name="review" required></textarea>
+      
+            <label for="rating">Calificación:</label>
+        <select id="rating" name="rating" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      
+        <label for="file">Subir evidencia (opcional):</label>
+        <input type="file" id="file" name="file">
+      
+        <button type="submit">Subir reseña</button>
+      </form>
+      
+</body>
+
+<style>
+    form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+</style>
