@@ -4,7 +4,7 @@ const User = require("../models/User.model")
 
 /* GET home page */
 router.get("/", (req, res, next) => {
-  res.render("index");
+  res.render("index", {userInSession: req.session.currentUser});
 });
 
 router.get("/crear-resena", (req, res, next) => {
