@@ -9,13 +9,12 @@
 }
 
 body{
-  font-family: sans-serif;
   padding: 90px 20px 0;
 }
 
 .header{
   background-color: #ff6b35;
-  height: 80px;
+  height: 90px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -35,10 +34,7 @@ body{
 }
 
 .logo{
-  font-size: 30px;
-  font-weight: bold;
   padding: 0 40px;
-  line-height: 80px;
 }
 
 .nav-menu{
@@ -48,9 +44,9 @@ body{
 }
 
 .nav-menu-item{
-  font-size: 15px;
+  font-size: 22px;
   margin: 0 10px;
-  line-height: 80px;
+  line-height: 100px;
   text-transform: uppercase;
   width: max-content;
 }
@@ -65,7 +61,7 @@ body{
 }
 
 .botonNav{
-  font-size: 15px;
+  font-size: 16px;
   background-color: #004e89;
   height: 35px;
   width: 100px;
