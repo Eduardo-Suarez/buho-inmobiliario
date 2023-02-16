@@ -20,19 +20,35 @@
 
              <li class="nav-menu-item"><a href="#" class="nav-link nav-link">Servicios</a></li>
 
-             <li class="nav-menu-item"> 
-              <a href="/auth/signup">
-                <button class="nav-link nav-link botonNav">Registrate</button>
-             </a>
-             </li>
+             
+              {{#unless userInSession}} 
+              <li class="nav-menu-item">
+                <a href="/auth/signup">
+                  <button class="nav-link nav-link botonNav">Registrate</button>
+                </a>
+              </li>
+              
+              <li class="nav-menu-item">
+                <a href="/auth/login">
+                  <button class="nav-link nav-link botonNav">Iniciar Sesión</button>
+                </a>
+              </li>
+              {{/unless}}
+             
 
              <li class="nav-menu-item">
-              <a href="/auth/login">
-                <button class="nav-link nav-link botonNav">Iniciar Sesión</button>
-             </a>
-              
-             
+              {{#if userInSession}}
+                <a href="/profile">
+                  <img src="{{userInSession.picture}}" alt="">
+                  <strong>{{userInSession.username}}</strong>
+                </a>
+
+                <a href="/auth/logout">
+                    <button class="nav-link nav-link botonNav">Cerrar Sesión</button>
+                </a>
+              {{/if}}
              </li>
+          
         </ul>
     </nav>
 </header>
