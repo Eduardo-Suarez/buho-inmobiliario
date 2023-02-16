@@ -1,41 +1,6 @@
-<header class="header">
-    <nav class="nav">
-    <a href="/" class="logo nav-link">GBI</a>
-    <ul class="nav-menu">
-        {{#unless userInSession}}
-        <li class="nav-menu-item">
-            <a href="/auth/signup">
-                <button class="nav-link nav-link botonNav">Registrate</button>
-            </a>
-        </li>
-
-        <li class="nav-menu-item">
-            <a href="/auth/login">
-                <button class="nav-link nav-link botonNav">Iniciar Sesión</button>
-            </a>
-        </li>
-        {{/unless}}
-
-
-        <li class="nav-menu-item">
-            {{#if userInSession}}
-            <a href="/profile">
-                <img src="{{userInSession.picture}}" alt="">
-                <strong>{{userInSession.username}}</strong>
-            </a>
-
-            <a href="/auth/logout">
-                <button class="nav-link nav-link botonNav">Cerrar Sesión</button>
-            </a>
-            {{/if}}
-        </li>
-    </ul>
-    </nav>
-</header>
-
 
 <body>
-    <form action="/" method="post" enctype="multipart/form-data">
+    <form action="" method="post" enctype="multipart/form-data">
         <h1>Reportar</h1>
 
         <label for="category">Categoría:</label>
@@ -65,6 +30,9 @@
         <input type="file" id="file" name="file">
 
         <button type="submit">Subir reseña</button>
+        {{#if errorMessage}}
+            <p class="error">{{errorMessage}}</p>
+        {{/if}}
     </form>
 
 </body>

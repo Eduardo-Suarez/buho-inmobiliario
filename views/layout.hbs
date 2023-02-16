@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
 
-  <body>
+
     <header class="header">
     <nav class="nav">
         <a href="/" class="logo nav-link"><img src="/images/buroActualizado.png" height="110px" alt="" ></a>
@@ -21,45 +21,50 @@
 
              
               {{#unless userInSession}} 
-              <li class="nav-menu-item">
-                <a href="/auth/signup">
-                  <button class="nav-link nav-link botonNav">Registrate</button>
-                </a>
-              </li>
-              
-              <li class="nav-menu-item">
-                <a href="/auth/login">
-                  <button class="nav-link nav-link botonNav">Iniciar Sesión</button>
-                </a>
-              </li>
+                <li class="nav-menu-item">
+                  <a href="/auth/signup">
+                    <button class="nav-link nav-link botonNav">Registrate</button>
+                  </a>
+                </li>
+                
+                <li class="nav-menu-item">
+                  <a href="/auth/login">
+                    <button class="nav-link nav-link botonNav">Iniciar Sesión</button>
+                  </a>
+                </li>
               {{/unless}}
              
 
-             <li class="nav-menu-item">
-              {{#if userInSession}}
-                <a href="/profile">
-                  <img src="{{userInSession.picture}}" alt="">
-                  <strong>{{userInSession.username}}</strong>
-                </a>
+            {{#if userInSession}}
+              <li class="nav-menu-item">
+                
+                  <a href="/profile">
+                    <img src="{{userInSession.picture}}" alt="">
+                    <strong>{{userInSession.username}}</strong>
+                  </a>
 
-                <a href="/auth/logout">
-                    <button class="nav-link nav-link botonNav">Cerrar Sesión</button>
-                </a>
+                  <a href="/auth/logout">
+                      <button class="nav-link nav-link botonNav">Cerrar Sesión</button>
+                  </a>
+                </li>
               {{/if}}
-             </li>
           
         </ul>
     </nav>
 </header>
 
-    {{{body}}}
+
+<body>
+  {{{body}}}
+</body>
+    
 
 <footer class="footer">
     <p>© 2023 Gran Buro Inmobiliario. Todos los derechos reservados.</p>
   </footer>
 
     <script src="/js/script.js"></script>
-  </body>
+
 
 </html>
 
