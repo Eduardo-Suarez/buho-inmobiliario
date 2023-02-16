@@ -15,7 +15,7 @@ router.get("/quienSomos", (req,res,next) => {
   res.render("quienSomos")
 })
 
-router.get("/vista-resenas", (req,res,next) => {
+router.get("/vista-resena", (req,res,next) => {
   res.render("vistaResenas");
 })
 
