@@ -5,7 +5,7 @@ const Resena = require("../models/Resena")
 const router = Router()
 
 //Method get
-router.get("/resena", (req,res) => {
+router.get("/resena", isLoggedIn, (req,res) => {
     res.render("user/resena")
 })
 
