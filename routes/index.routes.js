@@ -11,7 +11,7 @@ router.get("/crear-resena", (req, res, next) => {
   res.render("creacionResena");
 });
 // Get quien somos
-router.get("/quienSomos", (req,res,next) => {
+router.get("/contacto", (req,res,next) => {
   res.render("quienSomos")
 })
 
